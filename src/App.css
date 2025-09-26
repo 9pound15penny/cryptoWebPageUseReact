@@ -2,26 +2,26 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.AppHeader {
+  background: #001529;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 24px;
+}
+
+/* 更具体的选择器 - 组合类名和标签 */
+.AppHeader .title,
+.AppHeader h3.ant-typography {
+  color: white !important;
+  margin: 0 !important;
+  line-height: 64px !important;
 }
 
 .App-link {
@@ -35,4 +35,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.footer{
+  text-align: center;
+  background: #001529;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 16px 0;
 }
